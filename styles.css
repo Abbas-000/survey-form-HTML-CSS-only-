@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: dodgerblue;
+}
+
+main {
+  background-color: #9F9F9F;
+  margin: 3% auto;
+  padding: 15px;
+  width: 70%;
+  border-radius: 4px;
+}
+
+#title {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#description {
+  font-size: 22px;
+  text-align: center;
+}
+
+.wrapper {
+  padding: 20px;
+}
+
+label, inlineP {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #FFF;
+  margin-top: 6px;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+  cursor: pointer;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75 {
+    width: 100%;
+    margin-top: 0;
+  }
+}
